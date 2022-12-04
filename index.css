@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(220, 220, 220);
+  font-family: "Electrolize", sans-serif;
+}
+/*! Navbar Start !*/
+.navbar {
+  background: linear-gradient(to right, white, rgb(91, 90, 90));
+  background-color: rgba(255, 255, 255, 0.601);
+  border-radius: 10px;
+}
+.navbar-tags {
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar-tags a {
+  font-size: 24px;
+  text-decoration: none;
+}
+.navbar-tags a:hover {
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  font-size: 50px;
+  padding: 65px;
+  transition: 0.5s;
+}
+/*! Navbar End !*/
+/*! Content Start !*/
+.content {
+  background: url(468739.jpg);
+  height: calc(100vh - 200px);
+  background-size: 100% 100%;
+  /* margin: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 150px;
+  column-gap: 30px;
+}
+
+.text {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+.text > h1,
+p {
+  letter-spacing: 10px;
+  color: white;
+}
+/*! Content End !*/
+
+@media screen and (max-width: 500px) {
+  .navbar-tags {
+    flex-direction: column;
+  }
+  .navbar-tags a:hover {
+    padding: 0;
+  }
+  .content {
+    padding: 0;
+  }
+  .text {
+    padding-right: 25px;
+    padding-top: 700px;
+    font-size: 10px;
+    justify-content: end;
+  }
+  .text h1,
+  p {
+    letter-spacing: 0;
+  }
+}

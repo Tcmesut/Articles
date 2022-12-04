@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+* {
+  margin: 0;
+  font-family: "Electrolize", sans-serif;
+}
+body {
+  height: 100vh;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
+  background: linear-gradient(white, rgba(0, 0, 0, 0.719));
+}
+.desc {
+  padding-top: 100px;
+  padding-left: 200px;
+  /* border: 2px solid black; */
+  width: 50%;
+}
+p {
+  font-size: 24px;
+}
+@media screen and (max-width: 500px) {
+  .desc {
+    padding: 0;
+    border: none;
+  }
+
+}
